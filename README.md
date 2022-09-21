@@ -1,2 +1,2 @@
 # Lab 🎯
-## Praticando
+## Praticando Programação
