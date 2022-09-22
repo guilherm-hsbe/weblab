@@ -1,0 +1,63 @@
+body, input, button{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+
+input{
+    padding: 9px 0 7px 8px;
+    margin-bottom: 7px;
+    background-color: hsl(0deg 0% 98%);
+    border-radius: 3px;
+    border-color: #e6e6e6;
+    border-style: solid;
+    border-width: 1px;
+    height: 20px;
+}
+
+button {
+    background-color: #0095F6;
+    border: none;
+    color: white;
+    padding: 6px 9px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 7px;
+}
+
+.mainDIV{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftDIV{
+    height: 700px; 
+    width: 500px; 
+    background-image:url(https://www.instagram.com/static/images/homepage/phones/home-phones.png/1dc085cdb87d.png); 
+    background-repeat: no-repeat;
+}
+
+.rightDIV{
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #e6e6e6;
+}
+
+.rightDIV_container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: stretch;
+    justify-content: center;
+    width: 260px;
+    padding: 45px;
+    background-color: #ffffff;
+}

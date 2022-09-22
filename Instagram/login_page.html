@@ -6,44 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instagram</title>
 
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="imgs/icon.png">
-
-	<style>
-        input{
-            padding: 9px 0 7px 8px;
-            margin-bottom: 7px;
-            background-color: hsl(0deg 0% 98%);
-            border-radius: 3px;
-            border-color: #e6e6e6;
-            border-style: solid;
-            border-width: 1px;
-            height: 20px;
-        }
-        input:focus{
-            border: 1px solid rgb(139, 139, 139);
-        }
-
-	</style>
 </head>
+
 <body style="background-color: #fafafa; height: 100vh; margin: 0px; margin-top: 11.2vh">
+
 	<!--#DIV-Main-->
-    <div 
-		style="display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-content: center;
-        justify-content: center;
-        align-items: center;">
+    <div class="mainDIV">
 
 		<!--#Left-->
-        <div class="left" 
-        style="
-            height: 700px; 
-            width: 500px; 
-            background-image:url(https://www.instagram.com/static/images/homepage/phones/home-phones.png/1dc085cdb87d.png); 
-            background-repeat: no-repeat;">
-
-            <img src="imgs/phone_screen.png" 
+        <div class="leftDIV">
+            <img class="phone_scr" src="imgs/phone_screen.png" 
             style="
                 position: relative; 
                 top: 28px; 
@@ -51,31 +25,18 @@
         </div><!--#end-left-->
         
 		<!--#Right-->
-        <div class="right" 
-            style="
-                border-style: solid; 
-                border-width: 1px; 
-                border-color: #e6e6e6;">
-
-            <div 
-			style="
-				display: flex;
-				flex-direction: column;
-				flex-wrap: nowrap;
-				align-content: center;
-				align-items: stretch;
-				justify-content: center;
-				width: 260px;
-                padding: 45px;
-                background-color: #ffffff;">
-
+        <div class="rightDIV">
+            <div class="rightDIV_container">
                 <img src="imgs/logo.png" 
 					style="padding: 0px 50px 0px 50px; margin-bottom: 40px;"
 				>
                 <input type="text" placeholder="Phone number, username, or email">
                 <input type="password" placeholder="Password">
+
+                <button type="button">Sign In</button>
             </div>
         </div><!--#end-right-->
     </div><!--#end-div-main-->
+    
 </body>
 </html>
