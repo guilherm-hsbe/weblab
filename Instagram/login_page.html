@@ -10,7 +10,7 @@
     <link rel="icon" href="imgs/icon.png">
 </head>
 
-<body style="background-color: #fafafa; height: 100vh; margin: 0px; margin-top: 11.2vh">
+<body>
 
 	<!--#DIV-Main-->
     <div class="mainDIV">
@@ -18,25 +18,42 @@
 		<!--#Left-->
         <div class="leftDIV">
             <img class="phone_scr" src="imgs/phone_screen.png" 
-            style="
-                position: relative; 
-                top: 28px; 
-                left: 155px;">
+            style=" position: relative; 
+                    top: 28px; 
+                    left: 155px;">
         </div><!--#end-left-->
         
 		<!--#Right-->
         <div class="rightDIV">
             <div class="rightDIV_container">
                 <img src="imgs/logo.png" 
-					style="padding: 0px 50px 0px 50px; margin-bottom: 40px;"
-				>
+					style=" padding: 0 3.1rem; 
+                            margin-bottom: 2.1rem;">
+
                 <input type="text" placeholder="Phone number, username, or email">
                 <input type="password" placeholder="Password">
 
-                <button type="button">Sign In</button>
+                <button class="singin" type="button">Sign In</button>
+
+                <div style="display: flex; align-items: center; margin: 0.6rem 0 1.1rem">
+                    <hr>
+                    <p class="ou">OU</p>
+                    <hr>
+                </div>
+
+                <div style="align-items: stretch; justify-content: flex-start; flex-direction: column; align-content: stretch; display: flex; margin: 0.5rem 2.5rem;">
+                    <button type="button" style="border: none; background-color: #ffffff; cursor: pointer; width: 100%">
+                        <img src="imgs/fb_logo.png" 
+                        style="background-repeat: no-repeat;
+                        height: 16px;
+                        width: 16px;
+                        margin-right: 0.3rem;">
+                        <span style="font-weight: 650; color: #385185; font-size: 0.8rem">Sign In with Facebook</span>
+                    </button>
+                </div>
             </div>
         </div><!--#end-right-->
     </div><!--#end-div-main-->
-    
+
 </body>
 </html>
