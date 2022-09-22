@@ -38,18 +38,17 @@ hr{
     background-image:url(https://www.instagram.com/static/images/homepage/phones/home-phones.png/1dc085cdb87d.png); 
     background-repeat: no-repeat;
 
-    height: 700px; 
-    width: 500px; 
-}
-
-.rightDIV{
-    border-style: solid; 
-    border-width: 1px; 
-    border-color: #e6e6e6;
+    height: 570px; 
+    width: 455px; 
 }
 
 .rightDIV_container{
     background-color: #ffffff;
+
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #e6e6e6;
+
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -59,6 +58,7 @@ hr{
 
     width: 260px;
     padding: 2.5rem 2.5rem 1.3rem;
+    margin: 0.6rem 0
 }
 
 .singin{
