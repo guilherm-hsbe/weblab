@@ -17,8 +17,8 @@ input{
     border-width: 1px;
 
     height: 20px;
-    padding: 9px 0 7px 8px;
-    margin-bottom: 7px;
+    padding: 0.56rem 0 0.43rem 0.5rem;
+    margin-bottom: 0.43rem;
 }
 
 hr{
@@ -58,7 +58,7 @@ hr{
     justify-content: center;
 
     width: 260px;
-    padding: 40px;
+    padding: 2.5rem 2.5rem 1.3rem;
 }
 
 .singin{
@@ -74,7 +74,7 @@ hr{
 
     display: inline-block;
     margin-top: 7px;
-    padding: 6px 9px;
+    padding: 0.37rem 0.56rem; 
 }
 
 .ou{
@@ -82,5 +82,23 @@ hr{
     font-weight: 600;
     color: #8E8E8E;
     padding: 0 1.2rem;
+}
+
+.divFacebook{
+    align-items: stretch; 
+    justify-content: flex-start; 
+    flex-direction: column; 
+    align-content: stretch; 
+    display: flex; 
+    margin: 0.5rem 2.5rem;
+}
+
+.forgot_pass{
+    text-align: center; 
+    text-decoration: none; 
+    font-size: 0.7rem; 
+    line-height: 16px; 
+    color: #00376B; 
+    margin-top: 1.5rem;
 }
 
