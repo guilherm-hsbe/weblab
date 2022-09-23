@@ -8,12 +8,11 @@
 }
 
 body{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-
     background: #0c0ce94d;
 }
 
@@ -113,7 +112,7 @@ body{
 }
 
 .input-box input:focus-visible{
-        outline: 1px solid #6c63ff;
+    outline: 1px solid #6c63ff;
 }
 
 .input-box label,
