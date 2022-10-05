@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bones</title>
+    <link rel="icon" href="../!imgs/skull.png">
+    
+    <link rel="stylesheet" href="../!css/skeleton.css">
+
+    <style>
+        body {
+            background-color: lavender !important;
+            margin-top: 15rem;
+        }
+
+        .badge {
+            /* badge stuff */
+            background-color: #fcfcfc;
+            border-radius: 20px;
+            box-shadow: 4px 4px 10px #d3d3d3;
+
+            /* badge-spacings */
+            width: 40rem;
+            padding: 2.5rem 0 2.5rem 0;
+            
+            /* align-center */
+            text-align: center;
+        }
+
+        /* text-style */
+        .badge h2 {
+            text-align: center;
+            color: rgb(56, 53, 59);
+            text-shadow: 3px 3px 15px rgb(245, 232, 255);
+            font-size: 3.8rem;
+        }
+        .badge h2:hover {
+            color: rgb(179, 132, 233);
+            text-shadow: none;
+            transition: 0.2s;
+        }
+        .badge span {
+            font-weight: bold;
+        }
+
+        /* button-style */
+        .badge a {
+            font-size: small;
+            border-radius: 7px;
+        }
+        .badge a:hover {
+            background-color: rgb(140, 115, 255);
+            color: white;
+            transition: 0.2s;
+        }
+
+        /* divider */
+        .badge hr {
+            border-top: 2px solid #f5f5f5;
+            width: 80%;
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+        }
+
+        /* code-style */
+        .badge code {
+            width: 70%;
+            margin: auto;
+            text-align: left;
+            border: none;
+            background-color: #f3f3f3;
+            font-size: 1.3rem;
+        }
+        .badge code:hover {
+            background-color: #fcfcfc;
+            color: #a25ee2;
+            font-weight: 600;
+            transition: 0.2s
+        }
+        .badge code span:hover {
+            font-weight: bold;
+            color: #7c3db3;
+        }
+    </style>
+</head>
+<body>
+    <div class="badge container">
+        <!-- welcome -->
+        <h2>Hello Skeleton...</h2>
+        <hr>
+
+        <!-- code -->
+        <pre><code>
+.skeleton {
+skeleton provides a very cool and <span>
+dead </span>to your page;
+}</code></pre>
+
+        <!-- button -->
+        <a class="button" href="http://getskeleton.com/#intro" target="_blank">turn undead</a>
+    </div>
+</body>
+</html>
