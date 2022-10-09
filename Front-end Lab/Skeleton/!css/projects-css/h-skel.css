@@ -1,0 +1,33 @@
+/** LEFT-DIV */
+.left-d {
+    height: 100vh;
+    background-color: #a770e6;
+}
+.left-d div{
+    /* spacing */
+    height: 70%;
+    width: 80%;
+    padding: 15rem 3rem 15rem 3rem;
+    text-align: center;
+}
+
+/** TEXT */
+.ld-content p,h1,h2,h3,h4,h5 {
+    color: white;
+}
+.ld-content h1 {
+    font-size: 5.5rem;
+}
+
+/** BUTTON */
+.ld-content a {
+    font-size: small;
+    border-radius: 7px;
+    background-color: #ffffff;
+    border: 0;
+}
+.ld-content a:hover {
+    background-color: #8c73ff;
+    color: white;
+    transition: 0.2s;
+}
