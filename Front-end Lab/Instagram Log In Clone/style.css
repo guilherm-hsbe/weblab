@@ -25,6 +25,10 @@ hr{
     width: 50%;
 }
 
+form {
+    display: grid;
+}
+
 .mainDIV{
     display: flex;
     flex-direction: row;
