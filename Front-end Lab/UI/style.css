@@ -1,0 +1,40 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+
+    background-color: #202626;
+}
+
+.centralize {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*? ─── Botões ─────────────────────────────────────────────────────────────── */
+/** btn-1 */
+.btn-1 {
+    padding: 0.5rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 5px 0 #1effca;
+    background-color: #f5ffff;
+    color: darkslategray;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+.btn-1:hover { /*hover*/
+    background-color: #f9f9f9;
+    color: #2aa8aa;
+}
+.btn-1:active { /*active*/
+    box-shadow: 0 0 0 transparent;
+    transform: translateY(5px);
+}
