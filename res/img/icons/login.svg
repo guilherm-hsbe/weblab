@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="256px" height="256px" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="0.00024000000000000003" xmlns="http://www.w3.org/2000/svg">
+  <g style="" transform="matrix(1.164235, 0, 0, 1.164235, -1.902577, -2.056126)">
+    <rect x="8" y="5.369" width="10.931" height="12.137" style="stroke-width: 1px; stroke: none; fill: rgb(255, 255, 255);"/>
+    <g id="SVGRepo_iconCarrier">
+      <path fill="#000000" fill-rule="evenodd" d="M11 2a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h6a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3h-6zm1.293 6.293a1 1 0 0 1 1.414 0l3 3a1 1 0 0 1 0 1.414l-3 3a1 1 0 0 1-1.414-1.414L13.586 13H5a1 1 0 1 1 0-2h8.586l-1.293-1.293a1 1 0 0 1 0-1.414z" clip-rule="evenodd"/>
+    </g>
+  </g>
+  <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
