@@ -1,0 +1,27 @@
+/** ─── Estilos Globais */
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../res/fonts/poppins/Poppins-Regular.ttf");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+main {
+    flex: 1;
+    margin: 4rem 0; 
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
