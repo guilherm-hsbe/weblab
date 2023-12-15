@@ -1,6 +1,7 @@
 :root {
     --pool-green: #22dba7;
-    --dark-green: #1a5b49
+    --dark-green: #1a5b49;
+    --light-red: #e34e4e;
 }
 
 /** ─── Modificando Bulma */
@@ -11,11 +12,16 @@
 
 /** ─── Estilos Customizados */
 
+
+/*? ─── Layout */
+
 .w-max {
     width: 100%;
 }
 
-.custom-input-1:active, .custom-input-1:focus {
+/*? ─── Inputs */
+
+.custom-input-1:active, .custom-input-1:focus { /*focus-active*/
     border-color: var(--pool-green) !important;
     box-shadow: 0 0 0.1rem 0 var(--pool-green) !important;
 }
@@ -36,12 +42,10 @@
 .custom-button-1, .custom-button-1 ion-icon {
     transition: 0.1s cubic-bezier(.47,0,.74,.71);
 }
-
-.custom-button-1:hover ion-icon {
+.custom-button-1:hover ion-icon { /*hover*/
     transform: translateY(-3px);
 }
-
-.custom-button-1:active, .custom-button-1:focus {
+.custom-button-1:active, .custom-button-1:focus { /*focus-active*/
     box-shadow: 0 0 0 transparent !important;
     transform: translateY(5px);
 }
