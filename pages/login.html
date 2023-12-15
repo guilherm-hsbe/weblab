@@ -4,18 +4,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/global.css  ">
+    <link rel="stylesheet" href="../frameworks/css/bulma-rtl.min.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/login-page.css">
+    <link rel="icon" href="../res/img/icons/login.svg">
 </head>
 
 <body>
     <main>
-        <div>Hello World</div>
+        <section class="section">
+            <div class="container is-centered">
+
+                <!-- Title -->
+                <div class="has-text-centered mb-6">
+                    <h2 class="title is-2 icon-text has-text-weight-bold">
+                        Log In
+                        <span class="icon is-large">
+                            <ion-icon name="log-in"></ion-icon>
+                        </span>
+                    </h2>
+                </div>
+
+                <div class="columns is-centered">
+                    <div class="column is-one-third">
+
+                        <!-- LogIn Form -->
+                        <form novalidate>
+
+                            <!-- username -->
+                            <div class="field">
+                                <label class="label">Username or email</label>
+                                <div class="control has-icons-left">
+                                    <input class="input is-rounded custom-input-1" type="text" placeholder="Inform your username or email">
+                                    <span class="icon is-small is-left">
+                                        <ion-icon name="person"></ion-icon>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <!-- password -->
+                            <div class="field">
+                                <label class="label">Password</label>
+                                <div class="control has-icons-left">
+                                    <input class="input is-rounded custom-input-1" type="text" placeholder="&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;">
+                                    <span class="icon is-small is-left">
+                                        <ion-icon name="key"></ion-icon>
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            <!-- login button -->
+                            <div class="field mt-6">
+                                <p class="control">
+                                    <button type="submit" class="button is-rounded has-text-weight-bold custom-button-1 w-max">
+                                        <span>Login</span>
+                                        <ion-icon name="arrow-up" class="ml-1"></ion-icon>
+                                    </button>
+                                </p>
+                            </div>
+
+                            <div class="has-text-centered is-size-7 mt-5">
+                                <p><a href="#" draggable="false">Forgot password?</a></p>
+                                <p>
+                                    <span>Don't have an account? </span>
+                                    <a>Signup</a>
+                                </p>
+                            </div>
+                        </form>
+                        
+                        <div class="columns is-centered mt-0 mb-2 is-flex is-align-items-center">
+                            <div class="column"><hr></div>
+                            <div class="column is-one-fifth has-text-centered is-unselectable">or</div>
+                            <div class="column"><hr></div>
+                        </div>
+
+                        <!-- Other Log In Buttons -->
+                        <div class="field">
+                            <p class="control">
+                                <button class="button is-outlined is-rounded has-text-weight-normal" style="width: 100%;">
+                                    <img src="../res/img/icons/google.png" alt="Ícone da Google" class="icon mr-2" style="width: 18px; height: auto;" draggable="false">
+                                    <span>Continue with Google</span>
+                                </button>
+                            </p>
+                        </div>
+
+                        <div class="field">
+                            <p class="control">
+                                <button class="button is-black is-rounded has-text-weight-normal" style="width: 100%;">
+                                    <ion-icon name="logo-apple" alt="Ícone da Apple" class="has-text-white mr-2"></ion-icon>
+                                    <span>Continue with Apple</span>
+                                </button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
