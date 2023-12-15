@@ -1,8 +1,7 @@
 /** ─── Estilos Globais */
 
-@font-face {
-    font-family: "Poppins";
-    src: url("../res/fonts/poppins/Poppins-Regular.ttf");
+html {
+    font-size: 20px;
 }
 
 body {
