@@ -1,6 +1,5 @@
 :root {
-    --pool-green: #22dba7;
-    --dark-green: #1a5b49;
+    --main-blue: #3850b7;
     --light-red: #e34e4e;
 }
 
@@ -19,33 +18,12 @@
     width: 100%;
 }
 
-/*? ─── Inputs */
-
-.custom-input-1:active, .custom-input-1:focus { /*focus-active*/
-    border-color: var(--pool-green) !important;
-    box-shadow: 0 0 0.1rem 0 var(--pool-green) !important;
-}
-
-.invalid-input-feedback {
-    border-color: var(--light-red) !important;
-    box-shadow: 0 0 0.1rem 0 var(--light-red) !important;
-}
-
 /*? ─── Buttons */
 
-.custom-button-1 {
-    box-shadow: 0 5px 0 var(--dark-green);
-    border: none;
-    background-color: var(--pool-green);
-    color: white;
+.ct-button {
+    box-shadow: 0 5px 0 var(--main-blue);
 }
-.custom-button-1, .custom-button-1 ion-icon {
-    transition: 0.1s cubic-bezier(.47,0,.74,.71);
-}
-.custom-button-1:hover ion-icon { /*hover*/
-    transform: translateY(-3px);
-}
-.custom-button-1:active, .custom-button-1:focus { /*focus-active*/
-    box-shadow: 0 0 0 transparent !important;
+.ct-button:active, .ct-button:focus {
     transform: translateY(5px);
+    box-shadow: none;
 }
