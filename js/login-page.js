@@ -19,6 +19,54 @@ function throwInvalidPasswordFeedback(message) {
     invalidMessagePass.classList.remove("is-hidden");
     invalidMessagePass.innerHTML = message;
 }
+
+function validateEmpty() {
+    const inputUser = document.getElementById('input-user');
+    const inputPass = document.getElementById('input-pass');
+    let validationCounter = 0;
+
+    if (inputUser.value == "" || inputUser.length == 0) {
+        throwInvalidUserFeedback("Inform your username or email.");
+        ++validationCounter;
+    }
+    if (inputPass.value == "" || inputPass.length == 0) {
+        throwInvalidPasswordFeedback("Inform your password.");
+        ++validationCounter;
+    }
+    if (validationCounter != 0) return false;
+}
+
+function validateLogin() {
+    const inputUser = document.getElementById('input-user');
+    const inputPass = document.getElementById('input-pass');
+    let validationCounter = 0;
+
+    if (inputUser.value != "user" && inputUser.value != "user@email.com") {
+        throwInvalidUserFeedback("Invalid username!");
+        ++validationCounter;
+    }
+    if (inputPass.value != "user123") {
+        throwInvalidPasswordFeedback("Invalid password!");
+        ++validationCounter;
+    }
+    if (validationCounter != 0) return false;
+}
+
+function validateForm() {
+    const inputUser = document.getElementById('input-user');
+    const inputPass = document.getElementById('input-pass');
+
+    inputUser.value = inputUser.value.trim();
+    inputPass.value = inputPass.value.trim();
+
+    if (validateEmpty() == false) return;
+    if (validateLogin() == false) return;
+}
+const submitButton = document.getElementById('button-login');
+submitButton.addEventListener("click", function() {
+    validateForm();
+})
+
 function togglePasswordVisibility() {
     const inputPass = document.getElementById('input-pass');
     const iconTogglePass = document.getElementById('iconTogglePass');
