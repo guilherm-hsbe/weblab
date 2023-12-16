@@ -2,8 +2,8 @@ function throwInvalidUserFeedback(message) {
     const inputUser = document.getElementById('input-user');
     const invalidMessageUser = document.getElementById('invalid-user');
 
-    if (!inputUser.classList.contains("invalid-input-feedback"))
-        inputUser.classList.add("invalid-input-feedback");
+    if (!inputUser.classList.contains("is-danger"))
+        inputUser.classList.add("is-danger");
 
     invalidMessageUser.classList.remove("is-hidden");
     invalidMessageUser.innerHTML = message;
@@ -13,8 +13,8 @@ function throwInvalidPasswordFeedback(message) {
     const inputPass = document.getElementById('input-pass');
     const invalidMessagePass = document.getElementById('invalid-pass');
 
-    if (!inputPass.classList.contains("invalid-input-feedback"))
-        inputPass.classList.add("invalid-input-feedback");
+    if (!inputPass.classList.contains("is-danger"))
+        inputPass.classList.add("is-danger");
 
     invalidMessagePass.classList.remove("is-hidden");
     invalidMessagePass.innerHTML = message;
