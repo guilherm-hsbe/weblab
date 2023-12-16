@@ -20,18 +20,25 @@
         <section class="section">
             <div class="container is-centered">
 
-                <!-- Title -->
-                <div class="has-text-centered mb-6">
-                    <h2 class="title is-2 icon-text has-text-weight-bold">
-                        Log In
-                        <span class="icon is-large">
-                            <ion-icon name="log-in"></ion-icon>
-                        </span>
-                    </h2>
-                </div>
-
                 <div class="columns is-centered">
                     <div class="column is-one-third">
+
+                        <!-- Title -->
+                        <div class="has-text-centered mb-4">
+                            <h2 class="title is-2 icon-text has-text-weight-bold">
+                                Log In
+                                <span class="icon is-large">
+                                    <ion-icon name="log-in"></ion-icon>
+                                </span>
+                            </h2>
+                        </div>
+
+                        <div class="is-size-6 mb-6 has-text-grey-light">
+                            <p>
+                                This is a static login page. It does not keep any credentials you type.
+                                <a type="button">Learn more</a>
+                            </p>
+                        </div>
 
                         <!-- LogIn Form -->
                         <form novalidate>
@@ -40,29 +47,29 @@
                             <div class="field">
                                 <label class="label">Username or email</label>
                                 <div class="control has-icons-left">
-                                    <input id="input-user" class="input is-rounded custom-input-1" type="text" placeholder="Inform your username or email">
+                                    <input id="input-user" class="input is-rounded custom-input-1" type="text" placeholder="'user' or 'user@email.com'">
                                     <span class="icon is-small is-left">
                                         <ion-icon name="person"></ion-icon>
                                     </span>
                                 </div>
-                                <p id="invalid-user" class="help is-danger is-hidden">Invalid feedback message!</p>
+                                <p id="invalid-user" class="help is-danger is-hidden"></p>
                             </div>
 
                             <!-- password -->
                             <div class="field">
                                 <label class="label">Password</label>
                                 <div class="control has-icons-left has-icons-right">
-                                    <input  id="input-pass" class="input is-rounded custom-input-1" type="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+                                    <input  id="input-pass" class="input is-rounded custom-input-1" type="password" placeholder="user123">
                                     <span class="icon is-small is-left">
                                         <ion-icon name="key"></ion-icon>
                                     </span>
                                     <span class="icon is-small is-right">
-                                        <a type="button" class="is-clickable is-flex">
-                                            <ion-icon name="eye-off"></ion-icon>
+                                        <a id="buttonTogglePass" type="button" class="is-clickable is-flex">
+                                            <ion-icon id="iconTogglePass" name="eye-off"></ion-icon>
                                         </a>
                                     </span>
                                 </div>
-                                <p id="invalid-pass" class="help is-danger is-hidden">Invalid feedback message!</p>
+                                <p id="invalid-pass" class="help is-danger is-hidden"></p>
                             </div>
                             
                             <!-- login button -->
@@ -114,6 +121,7 @@
         </section>
     </main>
 
+    <script src="../js/login-page.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
