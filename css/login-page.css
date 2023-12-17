@@ -22,6 +22,7 @@
 
 .ct-button {
     box-shadow: 0 5px 0 var(--main-blue);
+    transition: 30ms;
 }
 .ct-button:active, .ct-button:focus {
     transform: translateY(5px);
