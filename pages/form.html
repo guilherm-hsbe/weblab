@@ -6,17 +6,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
 
+    <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/siimple-icons/siimple-icons.css" />
     <link rel="stylesheet" href="../frameworks/css/siimple.css">
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/form-page.css">
 </head>
 
-<body>
-    <script src="../js/form-page.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<body class="has-bg-dark">
+    <main>
+        <div class="columns has-mt-16 has-p-16">
+
+            <!-- hero-cta -->
+            <div class="column is-three-fifths is-full-mobile">
+                <div class="is-uppercase has-text-white has-size-1 has-mb-6">
+                    <strong>Most loved</strong>
+                </div>
+
+                <div class="has-size-7 has-weight-black has-mb-4 has-lh-none has-text-white">
+                    Saiba como suas <span class="has-text-primary">informações</span> são 
+                    <span class="has-text-primary">coletadas</span>.
+                </div>
+
+                <div class="has-size-3 has-lh-heading has-text-white has-mb-8 is-semitransparent">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </div>
+
+                <div class="is-flex">
+                    <a class="button">Get started</a>
+                    <a class="button has-ml-3 has-bg-white has-text-primary">Contact us</a>
+                </div>
+            </div>
+
+            <!-- sign-in -->
+            <div class="column is-two-fifths is-full-mobile">
+                <div class="column is-four-fifths">
+                    <div class="card has-bg-white">
+                        <h4>Sign-in</h4>
+                    
+                        <div class="has-mb-4">
+                            <input type="email" class="input" placeholder="Email address" />
+                        </div>
+                    
+                        <div class="has-mb-4">
+                            <input type="password" class="input" placeholder="Password" />
+                        </div>
+                    
+                        <div class="has-mb-3">
+                            <button class="button is-full">Sign up</button>
+                        </div>
+                        
+                        <div class="has-size-0 has-text-dark is-semitransparent">
+                            By clicking <b>Sign up</b>, you agree to our <u>Terms of use</u>
+                            and our <u>Privacy policy</u>.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
