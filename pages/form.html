@@ -22,7 +22,11 @@
 <body>
     <main>
         <!-- hero -->
-        <section class="columns has-bg-dark has-p-16 has-pt-24 has-p-none-mobile vh-max-height">
+        <section 
+            class="columns has-bg-dark 
+                has-pt-24-desktop has-pt-8-mobile
+                has-p-16-tablet has-p-16-desktop has-p-4-mobile 
+                has-h-auto">
 
             <!-- cta -->
             <div class="column is-three-fifths is-full-mobile">
@@ -46,12 +50,12 @@
             </div>
 
             <!-- illustration -->
-            <div class="column is-two-fifths is-hidden-mobile">
+            <div class="column is-two-fifths-desktop is-hidden-mobile">
                 <img src="../res/img/illustrations/053-holding-phone-colour.svg" alt="">
             </div>
         </section>
 
-        <section class="columns has-p-16 has-p-none-mobile" id="sectionQuiz">
+        <section class="columns has-p-16-desktop has-p-16-tablet has-p-4-mobile" id="sectionQuiz">
             <div class="column is-three-fifths is-full-tablet is-full-mobile">
                 <div class="has-size-6 has-weight-black">Data Privacy Quiz</div>
                 <div class="has-size-2 has-lh-heading is-semitransparent">
@@ -114,7 +118,7 @@
                             What is the Purpose of a <span class="has-text-primary">Privacy Policy</span>?
                         </div>
                     
-                        <select id="q3-privacy" class="select column is-half is-full-tablet is-full-mobile">
+                        <select id="q3-privacy" class="select has-w-half has-w-full-mobile">
                             <option selected disabled>Select</option>
                             <option>To sell products</option>
                             <option>To inform users about data collection practices</option>
