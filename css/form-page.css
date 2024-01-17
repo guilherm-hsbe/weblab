@@ -40,3 +40,18 @@ footer {
 }
 
 /** ─── Componentes */
+
+/*? ─── Buttons */
+
+/* custom-white-button */
+.btn-white-custom:hover {
+    box-shadow: 0 0 20px #ffffff39;
+}
+
+/* custom-primary-button */
+.btn-primary-custom {
+    transition: none !important;
+}
+.btn-primary-custom:hover {
+    background-color: #0d62e1;
+}
