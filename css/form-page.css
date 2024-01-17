@@ -1,0 +1,57 @@
+/** ─── Propriedades Customizadas */
+
+/** ─── Classes Customizadas */
+
+/* font-weight */
+.has-weight-800 { font-weight: 800; }
+.has-weight-700 { font-weight: 700; }
+
+/** ─── Modificando SiimpleCSS */
+
+.label {
+    font-weight: 600;
+}
+
+/** ─── Estilos Globais */
+
+html {
+    font-size: 20px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    flex: 1;
+    margin: 0; 
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/** ─── Componentes */
+
+/*? ─── Buttons */
+
+/* custom-white-button */
+.btn-white-custom:hover {
+    box-shadow: 0 0 20px #ffffff39;
+}
+
+/* custom-primary-button */
+.btn-primary-custom {
+    transition: none !important;
+}
+.btn-primary-custom:hover {
+    background-color: #0d62e1;
+}
