@@ -14,6 +14,7 @@
     <!-- css -->
     <link rel="icon" href="../res/img/icons/incognito.svg">
     <link rel="stylesheet" href="../frameworks/css/siimple.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/siimple/siimple.css" />
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/form-page.css">
 </head>
@@ -40,13 +41,129 @@
                         Start Exploring
                         <i class="fa-solid fa-rocket"></i>
                     </a>
-                    <a class="button has-ml-3 has-bg-white has-text-primary">Take the Quiz</a>
+                    <a href="#sectionQuiz" class="button has-ml-3 has-bg-white has-text-primary">Take the Quiz</a>
                 </div>
             </div>
 
             <!-- illustration -->
             <div class="column is-two-fifths is-full-mobile">
                 <img src="../res/img/illustrations/053-holding-phone-colour.svg" alt="">
+            </div>
+        </section>
+
+        <section class="columns has-p-16" id="sectionQuiz">
+            <div class="column is-half">
+                <div class="has-size-6 has-weight-black">Data Privacy Quiz</div>
+                <div class="has-size-2 has-lh-heading has-mb-8 is-semitransparent">
+                    Test your knowledge asnwering the 5 questions below on <b>data privacy</b> and understand how your online actions may impact your <b>digital footprint</b>.
+                </div>
+
+                <form>
+                    <!-- question-1 -->
+                    <div>   
+                        <div class="has-size-2 has-weight-black has-mb-2">What is Personal Data?</div>
+
+                        <label class="label" for="radio0">
+                            <input type="radio" id="radio0" class="radio has-mr-3" name="radioQuestionOne">
+                            Your favorite website
+                        </label>
+
+                        <label class="label" for="radio0">
+                            <input type="radio" id="radio0" class="radio has-mr-3" name="radioQuestionOne">
+                            Information that identifies an individual
+                        </label>
+
+                        <label class="label" for="radio0">
+                            <input type="radio" id="radio0" class="radio has-mr-3" name="radioQuestionOne">
+                            A computer program
+                        </label>
+                    </div>
+
+                    <!-- question-2 -->
+                    <div class="has-mt-4">
+                        <div class="has-size-2 has-weight-black has-mb-2">How do Websites Store Information about You?</div>
+                    
+                        <label class="label" for="checkbox0">
+                            <input type="checkbox" id="checkbox0" class="checkbox" />
+                            <span class="has-ml-2">Cookies</span>
+                        </label>
+
+                        <label class="label" for="checkbox0">
+                            <input type="checkbox" id="checkbox0" class="checkbox" />
+                            <span class="has-ml-2">Passwords</span>
+                        </label>
+
+                        <label class="label" for="checkbox0">
+                            <input type="checkbox" id="checkbox0" class="checkbox" />
+                            <span class="has-ml-2">Secret codes</span>
+                        </label>
+
+                        <label class="label" for="checkbox0">
+                            <input type="checkbox" id="checkbox0" class="checkbox" />
+                            <span class="has-ml-2">All of the above</span>
+                        </label>
+                    </div>
+
+                    <!-- question-3 -->
+                    <div class="has-mt-4">
+                        <div class="has-size-2 has-weight-black has-mb-2">What is the Purpose of a Privacy Policy?</div>
+                    
+                        <select class="select">
+                            <option selected disabled>Select</option>
+                            <option>To sell products</option>
+                            <option>To inform users about data collection practices</option>
+                            <option>To provide entertainment</option>
+                        </select>
+                    </div>
+
+                    <!-- question-4 -->
+                    <div class="has-mt-4">
+                        <div class="has-size-2 has-weight-black has-mb-2">What Should You Check Before Clicking "Agree" to Terms and
+                            Conditions?</div>
+                    
+                        <label class="label" for="checkbox0">
+                            <input type="checkbox" id="checkbox0" class="checkbox" />
+                            <span class="has-ml-2">The length of the document</span>
+                        </label>
+                        
+                        <label class="label" for="checkbox0">
+                            <input type="checkbox" id="checkbox0" class="checkbox" />
+                            <span class="has-ml-2">The company's privacy policy</span>
+                        </label>
+                        
+                        <label class="label" for="checkbox0">
+                            <input type="checkbox" id="checkbox0" class="checkbox" />
+                            <span class="has-ml-2">The font style used in the document</span>
+                        </label>
+                    </div>
+
+                    <!-- question-1 -->
+                    <div class="has-mt-4">
+                        <div class="has-size-2 has-weight-black has-mb-2">Which of the Following is NOT Personal Data?</div>
+                    
+                        <label class="label" for="radio0">
+                            <input type="radio" id="radio0" class="radio has-mr-3" name="radioQuestionFive">
+                            Email address
+                        </label>
+                        
+                        <label class="label" for="radio0">
+                            <input type="radio" id="radio0" class="radio has-mr-3" name="radioQuestionFive">
+                            Social security number
+                        </label>
+                        
+                        <label class="label" for="radio0">
+                            <input type="radio" id="radio0" class="radio has-mr-3" name="radioQuestionFive">
+                            Favorite color
+                        </label>
+                    </div>
+
+                    <div class="has-mt-4">
+                        <button class="button">
+                            <span>Submit</span>
+                            <i class="fa-solid fa-paper-plane has-ml-1"></i>
+                        </button>
+                    </div>
+                </form>
             </div>
         </section>
     </main>
