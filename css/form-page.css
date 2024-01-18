@@ -39,13 +39,16 @@ footer {
     width: 100%;
 }
 
-/** ─── Componentes */
+/** ─── Componentes - Globais */
 
 /*? ─── Buttons */
 
 /* custom-white-button */
+.btn-white-custom {
+    transition: 0.2s !important;
+}
 .btn-white-custom:hover {
-    box-shadow: 0 0 20px #ffffff39;
+    box-shadow: 0 0 30px #ffffff28;
 }
 
 /* custom-primary-button */
@@ -54,4 +57,43 @@ footer {
 }
 .btn-primary-custom:hover {
     background-color: #0d62e1;
+}
+
+/* special-primary-button */
+.btn-primary-special {
+    transition: 0.2s !important;
+}
+.btn-primary-special:hover {
+    background-color: #0d62e1;
+    box-shadow: -5px 5px 0 white;
+}
+
+/** ─── Componentes - Por Seção */
+
+/** ─── Responsividade */
+
+@media(max-width:639px) {
+    html {
+        font-size: 18px;
+    }
+}
+@media(max-width:430px) {
+    html {
+        font-size: 16px;
+    }
+}
+@media(max-width:372px) {
+    html {
+        font-size: 14px;
+    }
+}
+@media(max-width:326px) {
+    html {
+        font-size: 12px;
+    }
+}
+@media(max-width:280px) {
+    html {
+        font-size: 10px;
+    }
 }
