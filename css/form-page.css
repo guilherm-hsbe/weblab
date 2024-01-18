@@ -39,7 +39,7 @@ footer {
     width: 100%;
 }
 
-/** ─── Componentes */
+/** ─── Componentes - Globais */
 
 /*? ─── Buttons */
 
@@ -67,6 +67,9 @@ footer {
     background-color: #0d62e1;
     box-shadow: -5px 5px 0 white;
 }
+
+/** ─── Componentes - Por Seção */
+
 /** ─── Responsividade */
 
 @media(max-width:639px) {
