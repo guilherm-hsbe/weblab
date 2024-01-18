@@ -58,8 +58,8 @@ footer {
 
 /** ─── Responsividade */
 
-/*? ─── Desktop */
-@media(max-width:1240px){
+/*? ─── Desktop (end) */
+@media only screen and (max-width:1200px){
     #hero-left-col, #hero-right-col { width: 50%; }
     #hero-left-col { 
         padding: 4% !important;
@@ -67,8 +67,8 @@ footer {
     }
 }
 
-/*? ─── Tablet */
-@media(max-width:768px){
+/*? ─── Tablet (end) */
+@media only screen and (max-width:768px){
     #hero-left-col { display: none; }
     #hero-right-col { width: 100%; }
 }
