@@ -55,3 +55,20 @@ footer {
     transform: translateY(5px);
     box-shadow: none;
 }
+
+/** ─── Responsividade */
+
+/*? ─── Desktop */
+@media(max-width:1240px){
+    #hero-left-col, #hero-right-col { width: 50%; }
+    #hero-left-col { 
+        padding: 4% !important;
+        font-size: 18px;
+    }
+}
+
+/*? ─── Tablet */
+@media(max-width:768px){
+    #hero-left-col { display: none; }
+    #hero-right-col { width: 100%; }
+}
