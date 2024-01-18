@@ -55,3 +55,30 @@ footer {
 .btn-primary-custom:hover {
     background-color: #0d62e1;
 }
+/** ─── Responsividade */
+
+@media(max-width:639px) {
+    html {
+        font-size: 18px;
+    }
+}
+@media(max-width:430px) {
+    html {
+        font-size: 16px;
+    }
+}
+@media(max-width:372px) {
+    html {
+        font-size: 14px;
+    }
+}
+@media(max-width:326px) {
+    html {
+        font-size: 12px;
+    }
+}
+@media(max-width:280px) {
+    html {
+        font-size: 10px;
+    }
+}
