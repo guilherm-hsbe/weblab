@@ -1,3 +1,7 @@
+/**
+ * Activate Typing Effect On Hero Subtitle 
+ * @type {*} 
+ * */
 let i = 0;
 const txt = 'THIS IS HOW YOUR DIGITAL JOURNEY CONTINUES.';
 const speed = 40;
@@ -8,6 +12,10 @@ function heroSubtitleWriter() {
         setTimeout(heroSubtitleWriter, speed);
     }
 } heroSubtitleWriter();
+
+/**
+ * Show Valid Login State
+ */
 function throwValidLogin() {
     throwEmailFeedback();
     throwPasswordFeedback();
@@ -25,6 +33,12 @@ function throwValidLogin() {
     document.getElementById('userEmail').disabled = true;
 
 }
+
+/**
+ * Show Alert For Password
+ * @param {*} message
+ * @param {*} isInvalid
+ */
 function throwPasswordFeedback(message, isInvalid) {
     const messagePassword = document.getElementById('alertPassword');
     if (isInvalid == true) {
@@ -37,6 +51,11 @@ function throwPasswordFeedback(message, isInvalid) {
     }
 }
 
+/**
+ * Show Alert For Email
+ * @param {*} message
+ * @param {*} isInvalid
+ */
 function throwEmailFeedback(message, isInvalid) {
     const messageEmail = document.getElementById('alertEmail');
     if (isInvalid == true) {
@@ -49,10 +68,20 @@ function throwEmailFeedback(message, isInvalid) {
     }
 }
 
+/**
+ * Validate Email Format
+ * @param {*} email
+ * @return {*} 
+ */
 function isValidEmail(email) {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
 }
+
+/**
+ * Verify Password Content
+ * @return {*} 
+ */
 function verifyInputs() {
     const password = document.getElementById('userPassword');
     const email = document.getElementById('userEmail');
@@ -73,9 +102,15 @@ function verifyInputs() {
 
     if (validationCounter != 0) return false;
 }
+
+/** @type {*} */
 const loginButton = document.getElementById('loginButton');
 loginButton.addEventListener('click', validateForm);
 
+/**
+ * Main Form Validation Calling Function
+ * @return {*} 
+ */
 function validateForm() {
     let password = document.getElementById('userPassword');
     let email = document.getElementById('userEmail');
