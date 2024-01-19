@@ -8,6 +8,23 @@ function heroSubtitleWriter() {
         setTimeout(heroSubtitleWriter, speed);
     }
 } heroSubtitleWriter();
+function throwValidLogin() {
+    throwEmailFeedback();
+    throwPasswordFeedback();
+
+    let loginButton = document.getElementById('loginButton');
+    let loginButtonMessage = document.getElementById('loginButtonMessage');
+    let loginButtonIcon = document.getElementById('loginButtonIcon');
+
+    loginButton.classList.add('has-bg-success', 'is-disabled');
+    loginButtonMessage.innerHTML = 'Logged In'
+    loginButtonIcon.classList = []
+    loginButtonIcon.classList.add('fa-solid', 'fa-check', 'fa-bounce');
+
+    document.getElementById('userPassword').disabled = true;
+    document.getElementById('userEmail').disabled = true;
+
+}
 function throwPasswordFeedback(message, isInvalid) {
     const messagePassword = document.getElementById('alertPassword');
     if (isInvalid == true) {
