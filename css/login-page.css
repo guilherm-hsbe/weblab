@@ -51,6 +51,12 @@ footer {
     font-weight: 500;
 }
 
+/*? ─── Background */
+
+.has-bg-success {
+    background-color: #1dab69 !important;
+}
+
 /*? ─── Buttons */
 
 .ct-button {
