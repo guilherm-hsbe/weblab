@@ -118,6 +118,6 @@ function validateForm() {
     password.value = password.value.trim();
     email.value = email.value.trim();
 
-    if (verifyEmptyValid() == false) return;
+    if (verifyInputs() == false) return;
     throwValidLogin();
 }
