@@ -75,3 +75,14 @@ function verifyInputs() {
 }
 const loginButton = document.getElementById('loginButton');
 loginButton.addEventListener('click', validateForm);
+
+function validateForm() {
+    let password = document.getElementById('userPassword');
+    let email = document.getElementById('userEmail');
+
+    password.value = password.value.trim();
+    email.value = email.value.trim();
+
+    if (verifyEmptyValid() == false) return;
+    throwValidLogin();
+}
