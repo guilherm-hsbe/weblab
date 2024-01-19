@@ -32,6 +32,10 @@ function throwEmailFeedback(message, isInvalid) {
     }
 }
 
+function isValidEmail(email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+}
 function verifyInputs() {
     const password = document.getElementById('userPassword');
     const email = document.getElementById('userEmail');
