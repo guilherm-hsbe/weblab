@@ -38,11 +38,23 @@ footer {
 
 /** ─── Estilos Customizados */
 
-
 /*? ─── Layout */
 
 .w-max {
     width: 100%;
+}
+
+/*? ─── Text */
+
+.has-text-danger {
+    color: #af0b12;
+    font-weight: 500;
+}
+
+/*? ─── Background */
+
+.has-bg-success {
+    background-color: #1dab69 !important;
 }
 
 /*? ─── Buttons */

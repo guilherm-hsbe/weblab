@@ -27,8 +27,7 @@
                         YOUR <span class="has-text-primary">LOG-IN</span> PAGE
                     </div>
                 
-                    <div class="has-size-5 has-lh-heading has-text-white has-mb-8 is-semitransparent">
-                        THIS IS HOW YOUR DIGITAL JOURNEY CONTINUES.
+                    <div id="heroSubtitle" class="has-size-5 has-lh-heading has-text-white has-mb-8 is-semitransparent">
                     </div>
                 </div>
             </div>
@@ -45,17 +44,25 @@
                     </div>
             
                     <div class="has-mb-4">
-                        <input type="email" class="input" placeholder="Email address" />
+                        <input id="userEmail" type="email" class="input" placeholder="Email address" />
+
+                        <span id="alertEmail" class="has-size-0 has-ml-3 is-unselectable has-text-danger is-hidden">
+                            <!-- Defined by JS -->
+                        </span>
                     </div>
             
                     <div class="has-mb-4">
-                        <input type="password" class="input" placeholder="Password" />
+                        <input id="userPassword" type="password" class="input" placeholder="Password" />
+
+                        <span id="alertPassword" class="has-size-0 has-ml-3 is-unselectable has-text-danger is-hidden">
+                            <!-- Defined by JS -->
+                        </span>
                     </div>
             
                     <div class="has-mb-3">
-                        <button class="button is-full has-bg-dark-hover">
-                            <span>Log in</span>
-                            <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                        <button id="loginButton" class="button is-full has-bg-dark-hover">
+                            <span id="loginButtonMessage">Log in</span>
+                            <i id="loginButtonIcon" class="fa-solid fa-arrow-right-to-bracket"></i>
                         </button>
                     </div>
             
@@ -94,7 +101,7 @@
         </div>
     </main>
 
-    <script src="../js/login-page.js"></script>
+    <script src="../js/login-siimple.js"></script>
     <script src="https://kit.fontawesome.com/f8b51f3b83.js" crossorigin="anonymous"></script>
 </body>
 
