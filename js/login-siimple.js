@@ -31,3 +31,6 @@ function throwEmailFeedback(message, isInvalid) {
         messageEmail.innerHTML = null;
     }
 }
+
+const loginButton = document.getElementById('loginButton');
+loginButton.addEventListener('click', validateForm);
