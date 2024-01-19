@@ -32,5 +32,25 @@ function throwEmailFeedback(message, isInvalid) {
     }
 }
 
+function verifyInputs() {
+    const password = document.getElementById('userPassword');
+    const email = document.getElementById('userEmail');
+    let validationCounter = 0;
+
+    if (password.value == "" || password.length == 0) {
+        throwPasswordFeedback('Passsword cannot be empty.', true);
+        ++validationCounter;
+    } else throwPasswordFeedback();
+
+    if (email.value == "" || email.length == 0) {
+        throwEmailFeedback('Email address cannot be empty.', true);
+        ++validationCounter;
+    } else if (!isValidEmail(email.value)) {
+        throwEmailFeedback('Invalid email address!', true);
+        ++validationCounter;
+    } else throwEmailFeedback();
+
+    if (validationCounter != 0) return false;
+}
 const loginButton = document.getElementById('loginButton');
 loginButton.addEventListener('click', validateForm);
