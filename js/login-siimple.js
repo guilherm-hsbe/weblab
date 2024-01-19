@@ -107,6 +107,11 @@ function verifyInputs() {
 const loginButton = document.getElementById('loginButton');
 loginButton.addEventListener('click', validateForm);
 
+document.addEventListener('keydown', function (event) {
+    if (event.key === 'Enter')
+        loginButton.click();
+});
+
 /**
  * Main Form Validation Calling Function
  * @return {*} 
