@@ -31,7 +31,6 @@ function throwValidLogin() {
 
     document.getElementById('userPassword').disabled = true;
     document.getElementById('userEmail').disabled = true;
-
 }
 
 /**
@@ -111,6 +110,8 @@ document.addEventListener('keydown', function (event) {
     if (event.key === 'Enter')
         loginButton.click();
 });
+
+document.getElementById('userEmail').focus();
 
 /**
  * Main Form Validation Calling Function
