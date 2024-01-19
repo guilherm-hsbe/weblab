@@ -44,8 +44,11 @@ footer {
 /*? ─── Buttons */
 
 /* custom-white-button */
+.btn-white-custom {
+    transition: 0.2s !important;
+}
 .btn-white-custom:hover {
-    box-shadow: 0 0 20px #ffffff39;
+    box-shadow: 0 0 30px #ffffff28;
 }
 
 /* custom-primary-button */
@@ -54,6 +57,15 @@ footer {
 }
 .btn-primary-custom:hover {
     background-color: #0d62e1;
+}
+
+/* special-primary-button */
+.btn-primary-special {
+    transition: 0.2s !important;
+}
+.btn-primary-special:hover {
+    background-color: #0d62e1;
+    box-shadow: -5px 5px 0 white;
 }
 /** ─── Responsividade */
 
