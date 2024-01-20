@@ -111,7 +111,14 @@ document.addEventListener('keydown', function (event) {
         loginButton.click();
 });
 
-document.getElementById('userEmail').focus();
+setPageLoadState();
+function setPageLoadState() {
+    let email = document.getElementById("userEmail");
+    let password = document.getElementById("userPassword");
+    email.focus();
+    email.value = null;
+    password.value = null;   
+}
 
 /**
  * Main Form Validation Calling Function
