@@ -5,12 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weblab</title>
 
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
     <!-- css -->
+    <link rel="icon" href="res/img/icons/test-tube.svg">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="frameworks/css/siimple.css">
 </head>
 <body>
     <main>
-        
+
+        <!--! hero-cta -->
+        <section class="columns has-p-24-desktop has-p-12-tablet has-p-6-mobile has-mt-16">
+            <div class="column is-three-quarters is-full-mobile container">
+                <div class="has-size-10 has-weight-black has-mb-4 has-lh-none is-unselectable">
+                    <span>Weblab</span>
+                    <i class="fa-solid fa-vial has-spin-effect" style="color: #63E6BE;"></i>
+                </div>
+
+                <style>
+                    .has-spin-effect { transition: 0.2s; }
+                    .has-spin-effect:hover { transform: rotate(25deg); }
+                    .has-spin-effect:active { transform: translateY(10px) rotate(15deg); }
+                </style>
+
+                <div class="has-size-4 has-lh-heading has-mb-8 is-semitransparent">
+                    Repositório de práticas de desenvolvimento de páginas web, com
+                    experimentação de frameworks CSS, bibliotecas e APIs.
+                </div>
+
+                <div class="is-flex">
+                    <a type="button" href="https://github.com/guilherm-hsbe/WebLab" target="_blank" draggable="false"
+                        class="button">
+                        <i class="fa-brands fa-github-alt has-mr-1"></i>
+                        GitHub
+                    </a>
+
+                    <a type="button" href="https://github.com/guilherm-hsbe/WebLab/blob/main/README.md" target="_blank"         
+                        draggable="false" class="button has-ml-3 has-bg-light has-text-primary">
+                        <i class="fa-solid fa-scroll"></i>
+                        README
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
     
     <script src="https://kit.fontawesome.com/f8b51f3b83.js" crossorigin="anonymous"></script>
