@@ -89,3 +89,8 @@ footer {
     #hero-left-col { display: none; }
     #hero-right-col { width: 100%; }
 }
+
+/*? ─── Mobile (end) */
+@media only screen and (max-width:480px) {
+    #hero-right-col { align-items: start; }
+}
