@@ -4,127 +4,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Login | SiimpleCSS</title>
 
+    <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../frameworks/css/bulma-rtl.min.css">
-    <link rel="stylesheet" href="../css/global.css">
+
+    <!-- css -->
     <link rel="stylesheet" href="../css/login-page.css">
     <link rel="icon" href="../res/img/icons/login.svg">
+    <link rel="stylesheet" href="../frameworks/css/siimple.css">
 </head>
 
 <body>
     <main>
-        <section class="section">
-            <div class="container is-centered">
+        <div class="columns has-h-screen has-w-auto">
 
-                <div class="columns is-centered">
-                    <div class="column is-one-third">
-
-                        <!-- Title -->
-                        <div class="has-text-centered mb-4">
-                            <h2 class="title is-2 icon-text has-text-weight-bold">
-                                Log In
-                                <span class="icon is-large">
-                                    <ion-icon name="log-in"></ion-icon>
-                                </span>
-                            </h2>
-                        </div>
-
-                        <div class="is-size-6 mb-6 has-text-grey-dark">
-                            <p>
-                                This is a static login page. It does not keep any credentials you type.
-                                <a type="button">Learn more</a>
-                            </p>
-                        </div>
-
-                        <!-- LogIn Form -->
-                        <form novalidate>
-
-                            <!-- username -->
-                            <div class="field">
-                                <label class="label">Username or email</label>
-                                <div class="control has-icons-left">
-                                    <input id="input-user" class="input is-rounded" type="text" placeholder="'user' or 'user@email.com'">
-                                    <span class="icon is-small is-left">
-                                        <ion-icon name="person"></ion-icon>
-                                    </span>
-                                </div>
-                                <p id="invalid-user" class="help is-danger is-hidden"></p>
-                            </div>
-
-                            <!-- password -->
-                            <div class="field">
-                                <label class="label">Password</label>
-                                <div class="control has-icons-left has-icons-right">
-                                    <input  id="input-pass" class="input is-rounded" type="password" placeholder="user123" >
-                                    <span class="icon is-small is-left">
-                                        <ion-icon name="key"></ion-icon>
-                                    </span>
-                                    <span class="icon is-small is-right">
-                                        <a id="buttonTogglePass" type="button" class="is-clickable is-flex">
-                                            <ion-icon id="iconTogglePass" name="eye-off"></ion-icon>
-                                        </a>
-                                    </span>
-                                </div>
-                                <p id="invalid-pass" class="help is-danger is-hidden"></p>
-                            </div>
-                            
-                            <!-- login button -->
-                            <div class="field mt-6">
-                                <p class="control">
-                                    <button id="button-login" type="button" 
-                                        class="button has-background-link-light has-text-link-dark ct-button is-rounded has-text-weight-bold w-max">
-                                        <span>Login</span>
-                                        <ion-icon name="log-in" class="ml-1"></ion-icon>
-                                    </button>
-                                </p>
-                            </div>
-
-                            <div class="has-text-centered is-size-7 mt-5">
-                                <p><a href="#" draggable="false">Forgot password?</a></p>
-                                <p>
-                                    <span>Don't have an account? </span>
-                                    <a>Signup</a>
-                                </p>
-                            </div>
-                        </form>
-                        
-                        <div class="columns is-centered mt-0 mb-2 is-flex is-align-items-center">
-                            <div class="column"><hr></div>
-                            <div class="column is-one-fifth has-text-centered is-unselectable">or</div>
-                            <div class="column"><hr></div>
-                        </div>
-
-                        <!-- Other Log In Buttons -->
-                        <div class="field">
-                            <p class="control">
-                                <button class="button is-outlined is-rounded has-text-weight-normal" style="width: 100%;">
-                                    <img src="../res/img/icons/google.png" alt="Ícone da Google" class="icon mr-2" style="width: 18px; height: auto;" draggable="false">
-                                    <span>Continue with Google</span>
-                                </button>
-                            </p>
-                        </div>
-
-                        <div class="field">
-                            <p class="control">
-                                <button class="button is-black is-rounded has-text-weight-normal" style="width: 100%;">
-                                    <ion-icon name="logo-apple" alt="Ícone da Apple" class="has-text-white mr-2"></ion-icon>
-                                    <span>Continue with Apple</span>
-                                </button>
-                            </p>
-                        </div>
+            <div id="hero-left-col" class="column has-bg-black is-three-fifths has-p-24 is-flex has-items-center">
+                <div>
+                    <div class="has-size-9 has-weight-black has-mb-4 has-lh-none has-text-white">
+                        YOUR <span class="has-text-primary">LOG-IN</span> PAGE
+                    </div>
+                
+                    <div id="heroSubtitle" class="has-size-5 has-lh-heading has-text-white has-mb-8 is-semitransparent">
                     </div>
                 </div>
             </div>
-        </section>
+
+            <div id="hero-right-col" class="column is-two-fifths is-flex has-items-center has-justify-center has-p-none">
+                <div class="card has-bg-white" style="width: 32rem;">
+                    <h1>
+                        <span>Log-in</span>
+                        <i class="fa-solid fa-right-to-bracket has-ml-1"></i>
+                    </h1>
+            
+                    <div class="has-mb-6 has-size-0">
+                        This is a static login form. It does not keep any credentials you type. <a href="#">Learn more</a>
+                    </div>
+            
+                    <div class="has-mb-4">
+                        <input id="userEmail" type="email" class="input" placeholder="Email address" autocomplete="off" />
+
+                        <span id="alertEmail" class="has-size-0 has-ml-3 is-unselectable has-text-danger is-hidden">
+                            <!-- Defined by JS -->
+                        </span>
+                    </div>
+            
+                    <div class="has-mb-4">
+                        <input id="userPassword" type="password" class="input" placeholder="Password" />
+
+                        <span id="alertPassword" class="has-size-0 has-ml-3 is-unselectable has-text-danger is-hidden">
+                            <!-- Defined by JS -->
+                        </span>
+                    </div>
+            
+                    <div class="has-mb-3">
+                        <button id="loginButton" class="button is-full has-bg-dark-hover">
+                            <span id="loginButtonMessage">Log in</span>
+                            <i id="loginButtonIcon" class="fa-solid fa-arrow-right-to-bracket"></i>
+                        </button>
+                    </div>
+            
+                    <a href="#" class="has-size-0">Forgot password?</a>
+            
+                    <div class="has-size-0">
+                        Don't have an account? <a href="#">Signup</a>
+                    </div>
+            
+                    <div class="columns is-flex">
+                        <div class="column"><hr></div>
+                        <div class="column is-one-fifth is-unselectable has-text-center">or</div>
+                        <div class="column"><hr></div>
+                    </div>
+            
+                    <div class="has-mb-4">
+                        <button class="button has-w-full is-rounded has-bg-white has-text-black is-flex has-justify-center has-items-center" style="border: 1px solid #00000045">
+                            <img src="../res/img/icons/google.png" 
+                                alt="Ícone da Google" 
+                                class="has-mr-1" 
+                                style="width: 16px; height: auto;" 
+                                draggable="false">
+                            <span>Continue with Google</span>
+                        </button>
+                    </div>
+            
+                    <div>
+                        <button class="button is-full is-black is-rounded has-bg-black">
+                            <i class="fa-brands fa-apple has-mr-1 has-size-2"></i>
+                            <span>Continue with Apple</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </main>
 
-    <script src="../js/login-page.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="https://kit.fontawesome.com/f8b51f3b83.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

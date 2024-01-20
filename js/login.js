@@ -27,7 +27,7 @@ function throwValidLogin() {
     loginButton.classList.add('has-bg-success', 'is-disabled');
     loginButtonMessage.innerHTML = 'Logged In'
     loginButtonIcon.classList = []
-    loginButtonIcon.classList.add('fa-solid', 'fa-check', 'fa-bounce');
+    loginButtonIcon.classList.add('fa-solid', 'fa-check', 'fa-bounce', 'has-ml-1');
 
     document.getElementById('userPassword').disabled = true;
     document.getElementById('userEmail').disabled = true;
@@ -111,7 +111,14 @@ document.addEventListener('keydown', function (event) {
         loginButton.click();
 });
 
-document.getElementById('userEmail').focus();
+setPageLoadState();
+function setPageLoadState() {
+    let email = document.getElementById("userEmail");
+    let password = document.getElementById("userPassword");
+    email.focus();
+    email.value = null;
+    password.value = null;   
+}
 
 /**
  * Main Form Validation Calling Function
