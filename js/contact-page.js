@@ -44,6 +44,12 @@ function autoResizeMessage() {
 }
 
 function countCharsMessage(messageLength) {
+    let maxChars = 500;
     const counter = document.getElementById('messageLengthCounter');
-    counter.innerHTML = messageLength
+    counter.innerHTML = maxChars - messageLength;
+    
+    const characterPlural = document.getElementById("messageCharacterPlural")
+    characterPlural.innerHTML = (counter.innerHTML == 1) ? 'character left' : 'characters left';
 }
+
+document.addEventListener('DOMContentLoaded', countCharsMessage(message.value.length));
