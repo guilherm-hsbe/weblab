@@ -1,3 +1,5 @@
+/* ─── Manuseando Selects ─────────────── */
+
 const identity = document.getElementById('contactIdentity');
 identity.addEventListener('change', handleOtherIdentity);
 
@@ -27,3 +29,5 @@ function handleOtherSubject() {
         otherSubject.value = null;
     }
 }
+
+/* ─── Formatando Inputs ─────────────── */
