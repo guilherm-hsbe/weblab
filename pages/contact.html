@@ -45,29 +45,30 @@
                             <!-- name -->
                             <div class="is-flex has-items-center is-relative has-mb-4">
                                 <div class="is-absolute" style="left:1.2rem;"><i class="fa-solid fa-user"></i></div>
-                                <input type="text" class="input has-pl-12 has-w-full has-bg-light" placeholder="Name">
+                                <input id="contactName" type="text" class="input has-pl-12 has-w-full has-bg-light" placeholder="Name">
                             </div>
                             
                             <!-- type of person -->
                             <div class="is-flex has-items-center is-relative has-mb-4">
                                 <div class="is-absolute" style="left:1.2rem;"><i class="fa-solid fa-user-astronaut"></i></div>
-                                <select class="select has-pl-12 has-w-full has-bg-light">
+                                <select id="contactIdentity" class="select has-pl-12 has-w-full has-bg-light">
                                     <option selected disabled>You are</option>
-                                    <option>Anonymous</option>
-                                    <option>Customer</option>
-                                    <option>Visitor</option>
-                                    <option>Client</option>
-                                    <option>Media Representative</option>
-                                    <option>Investor</option>
-                                    <option>Vendor/Supplier</option>
-                                    <option>Other</option>
+                                    <option value="customer">Customer</option>
+                                    <option value="visitor">Visitor</option>
+                                    <option value="client">Client</option>
+                                    <option value="mediarep">Media Representative</option>
+                                    <option value="investor">Investor</option>
+                                    <option value="vendor">Vendor/Supplier</option>
+                                    <option value="anon">Anonymous</option>
+                                    <option value="other">Other</option>
                                 </select>
                             </div>
                             
                             <!-- other user -->
-                            <div class="is-flex has-items-center is-relative has-mb-4">
+                            <div id="identityOtherDiv" class="is-flex has-items-center is-relative has-mb-4 is-hidden">
                                 <div class="is-absolute" style="left:1.2rem;"><i class="fa-solid fa-plus"></i></div>
-                                <input type="text" class="input has-pl-12 has-w-full has-bg-light" placeholder="Inform your identity">
+                                <input id="contactIdentityOther" type="text" class="input has-pl-12 has-w-full has-bg-light"
+                                    placeholder="Inform your identity">
                             </div>
                         </div>
 
@@ -76,13 +77,13 @@
                             <!-- email -->
                             <div class="is-flex has-items-center is-relative has-mb-4">
                                 <div class="is-absolute" style="left:1.2rem;"><i class="fa-solid fa-envelope"></i></div>
-                                <input type="email" class="input has-pl-12 has-w-full has-bg-light" placeholder="Email">
+                                <input id="contactEmail" type="email" class="input has-pl-12 has-w-full has-bg-light" placeholder="Email">
                             </div>
-                            
+                        
                             <!-- phone -->
                             <div class="is-flex has-items-center is-relative has-mb-4">
                                 <div class="is-absolute" style="left:1.2rem;"><i class="fa-solid fa-phone"></i></div>
-                                <input type="text" class="input has-pl-12 has-w-full has-bg-light" placeholder="Phone">
+                                <input id="contactPhone" type="text" class="input has-pl-12 has-w-full has-bg-light" placeholder="Phone">
                             </div>
                         </div>
 
@@ -91,40 +92,41 @@
                             <!-- subject -->
                             <div class="is-flex has-items-center is-relative has-mb-4">
                                 <div class="is-absolute" style="left:1.2rem;"><i class="fa-solid fa-hand-pointer"></i></div>
-                                <select class="select has-pl-12 has-w-full has-bg-light">
+                                <select id="contactSubject" class="select has-pl-12 has-w-full has-bg-light">
                                     <option selected disabled>Select a subject</option>
-                                    <option>General Inquiry</option>
-                                    <option>Technical Support</option>
-                                    <option>Sales and Pricing</option>
-                                    <option>Billing and Payments</option>
-                                    <option>Customer Service</option>
-                                    <option>Privacy Concerns</option>
-                                    <option>Legal Matters</option>
-                                    <option>Feedback and Suggestions</option>
-                                    <option>Report a Bug</option>
-                                    <option>Other</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="technical">Technical Support</option>
+                                    <option value="sales">Sales and Pricing</option>
+                                    <option value="billing">Billing and Payments</option>
+                                    <option value="service">Customer Service</option>
+                                    <option value="privacy">Privacy Concerns</option>
+                                    <option value="legal">Legal Matters</option>
+                                    <option value="feedback">Feedback and Suggestions</option>
+                                    <option value="bug">Report a Bug</option>
+                                    <option value="other">Other</option>
                                 </select>
                             </div>
                             
                             <!-- other subject -->
-                            <div class="is-flex has-items-center is-relative has-mb-4">
+                            <div id="subjectOtherDiv" class="is-flex has-items-center is-relative has-mb-4 is-hidden">
                                 <div class="is-absolute" style="left:1.2rem;"><i class="fa-solid fa-plus"></i></div>
-                                <input type="text" class="input has-pl-12 has-w-full has-bg-light" placeholder="Inform your subject">
+                                <input id="contactSubjectOther" type="text" class="input has-pl-12 has-w-full has-bg-light"
+                                    placeholder="Inform your subject">
                             </div>
                             
                             <!-- text -->
                             <div class="has-mb-4">
-                                <textarea class="textarea has-w-full has-bg-light" rows="5" placeholder="Write your message..."></textarea>
+                                <textarea id="contactMessage" class="textarea has-w-full has-bg-light" rows="5" placeholder="Write your message..."></textarea>
                             </div>
                             
                             <!-- file -->
                             <div class="is-flex has-items-center is-relative has-mb-4">
                                 <div class="is-absolute" style="left:1.2rem;"><i class="fa-solid fa-paperclip"></i></div>
-                                <input type="file" class="input has-pl-12 has-w-full has-bg-light">
+                                <input id="contactFile" type="file" class="input has-pl-12 has-w-full has-bg-light">
                             </div>
                         </div>
 
-                        <button type="button" class="button has-bg-black-hover is-full">
+                        <button id="submitButton" type="button" class="button has-bg-black-hover is-full">
                             <span>Send</span>
                             <i class="fa-solid fa-paper-plane"></i>
                         </button>
