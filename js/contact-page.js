@@ -12,3 +12,18 @@ function handleOtherIdentity() {
         otherIdentity.value = null;
     }
 }
+
+const subject = document.getElementById('contactSubject');
+subject.addEventListener('change', handleOtherSubject);
+
+function handleOtherSubject() {
+    const otherSubjectDiv = document.getElementById('subjectOtherDiv');
+    const otherSubject = document.getElementById('contactOtherSubject');
+
+    if (subject.value === 'other' && otherSubjectDiv.classList.contains('is-hidden')) {
+        otherSubjectDiv.classList.remove('is-hidden');
+    } else {
+        otherSubjectDiv.classList.add('is-hidden');
+        otherSubject.value = null;
+    }
+}
