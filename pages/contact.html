@@ -28,7 +28,114 @@
     </header>
 
     <main>
-        
+        <section class="container has-mt-12">
+            <div class="columns">
+                <div class="column is-half is-full-mobile">
+                    <div class="is-ubuntu has-size-6 has-weight-black">
+                        Contact Us
+                    </div>
+                    
+                    <div class="has-size-3 is-semitransparent">
+                        Cultivating Connections: Reach Out to Us for Inquiries, Assistance, or Just a Friendly Hello!
+                    </div>
+
+                    <form class="has-mt-8">
+                        <!--? Identity -->
+                        <div class="has-mb-6">
+                            <!-- name -->
+                            <div class="is-flex has-items-center is-relative has-mb-4">
+                                <div class="is-absolute" style="left:1.2rem;"><i class="fa-solid fa-user"></i></div>
+                                <input type="text" class="input has-pl-12 has-w-full has-bg-light" placeholder="Name">
+                            </div>
+                            
+                            <!-- type of person -->
+                            <div class="is-flex has-items-center is-relative has-mb-4">
+                                <div class="is-absolute" style="left:1.2rem;"><i class="fa-solid fa-user-astronaut"></i></div>
+                                <select class="select has-pl-12 has-w-full has-bg-light">
+                                    <option selected disabled>You are</option>
+                                    <option>Anonymous</option>
+                                    <option>Customer</option>
+                                    <option>Visitor</option>
+                                    <option>Client</option>
+                                    <option>Media Representative</option>
+                                    <option>Investor</option>
+                                    <option>Vendor/Supplier</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                            
+                            <!-- other user -->
+                            <div class="is-flex has-items-center is-relative has-mb-4">
+                                <div class="is-absolute" style="left:1.2rem;"><i class="fa-solid fa-plus"></i></div>
+                                <input type="text" class="input has-pl-12 has-w-full has-bg-light" placeholder="Inform your identity">
+                            </div>
+                        </div>
+
+                        <!--? Contact -->
+                        <div class="has-mb-6">
+                            <!-- email -->
+                            <div class="is-flex has-items-center is-relative has-mb-4">
+                                <div class="is-absolute" style="left:1.2rem;"><i class="fa-solid fa-envelope"></i></div>
+                                <input type="email" class="input has-pl-12 has-w-full has-bg-light" placeholder="Email">
+                            </div>
+                            
+                            <!-- phone -->
+                            <div class="is-flex has-items-center is-relative has-mb-4">
+                                <div class="is-absolute" style="left:1.2rem;"><i class="fa-solid fa-phone"></i></div>
+                                <input type="text" class="input has-pl-12 has-w-full has-bg-light" placeholder="Phone">
+                            </div>
+                        </div>
+
+                        <!--? Subject and Message -->
+                        <div class="has-mb-6">
+                            <!-- subject -->
+                            <div class="is-flex has-items-center is-relative has-mb-4">
+                                <div class="is-absolute" style="left:1.2rem;"><i class="fa-solid fa-hand-pointer"></i></div>
+                                <select class="select has-pl-12 has-w-full has-bg-light">
+                                    <option selected disabled>Select a subject</option>
+                                    <option>General Inquiry</option>
+                                    <option>Technical Support</option>
+                                    <option>Sales and Pricing</option>
+                                    <option>Billing and Payments</option>
+                                    <option>Customer Service</option>
+                                    <option>Privacy Concerns</option>
+                                    <option>Legal Matters</option>
+                                    <option>Feedback and Suggestions</option>
+                                    <option>Report a Bug</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                            
+                            <!-- other subject -->
+                            <div class="is-flex has-items-center is-relative has-mb-4">
+                                <div class="is-absolute" style="left:1.2rem;"><i class="fa-solid fa-plus"></i></div>
+                                <input type="text" class="input has-pl-12 has-w-full has-bg-light" placeholder="Inform your subject">
+                            </div>
+                            
+                            <!-- text -->
+                            <div class="has-mb-4">
+                                <textarea class="textarea has-w-full has-bg-light" rows="5" placeholder="Write your message..."></textarea>
+                            </div>
+                            
+                            <!-- file -->
+                            <div class="is-flex has-items-center is-relative has-mb-4">
+                                <div class="is-absolute" style="left:1.2rem;"><i class="fa-solid fa-paperclip"></i></div>
+                                <input type="file" class="input has-pl-12 has-w-full has-bg-light">
+                            </div>
+                        </div>
+
+                        <button type="button" class="button has-bg-black-hover is-full">
+                            <span>Send</span>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="column is-half is-hidden-mobile has-text-left has-justify-start has-self-start">
+                    <img src="../res/img/illustrations/053-holding-phone-colour.svg" alt="">
+                </div>
+            </div>
+        </section>
     </main>
 
     <!--! footer -->
