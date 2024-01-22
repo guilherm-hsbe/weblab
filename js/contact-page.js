@@ -53,3 +53,18 @@ function countCharsMessage(messageLength) {
 }
 
 document.addEventListener('DOMContentLoaded', countCharsMessage(message.value.length));
+
+const phoneNumber = document.getElementById("contactPhone");
+phoneNumber.addEventListener('input', function () {
+    this.value = formatPhoneNumber(this.value);
+})
+
+function formatPhoneNumber(phoneString) {
+    const numbers = phoneString.replace(/\D/g, "");
+
+    if (numbers.length === 10) {
+        return `(${numbers.slice(0, 2)}) ${numbers.slice(2, 6)}-${numbers.slice(6)}`;
+    } else if (numbers.length === 11) {
+        return `(${numbers.slice(0, 2)}) ${numbers.slice(2, 7)}-${numbers.slice(7)}`;
+    } else return numbers;
+}
