@@ -43,3 +43,7 @@ function autoResizeMessage() {
     message.style.height = (message.scrollHeight) + 'px';
 }
 
+function countCharsMessage(messageLength) {
+    const counter = document.getElementById('messageLengthCounter');
+    counter.innerHTML = messageLength
+}
