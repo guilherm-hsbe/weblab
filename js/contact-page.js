@@ -33,10 +33,13 @@ function handleOtherSubject() {
 /* ─── Formatando Inputs ─────────────── */
 
 const message = document.getElementById('contactMessage');
-message.addEventListener('input', autoResizeMessage);
+message.addEventListener('input', function () {
+    autoResizeMessage();
+    countCharsMessage(this.value.length);
+});
 
 function autoResizeMessage() {
-    this.style.height = 'auto';
-    this.style.height = (this.scrollHeight) + 'px';
+    message.style.height = 'auto';
+    message.style.height = (message.scrollHeight) + 'px';
 }
 
