@@ -31,3 +31,11 @@ function handleOtherSubject() {
 }
 
 /* ─── Formatando Inputs ─────────────── */
+
+const message = document.getElementById('contactMessage');
+message.addEventListener('input', autoResizeMessage);
+
+function autoResizeMessage() {
+    this.style.height = 'auto';
+    this.style.height = (this.scrollHeight) + 'px';
+}
